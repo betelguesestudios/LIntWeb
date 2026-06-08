@@ -1,7 +1,60 @@
 <head>
     <title>LInt - About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <style>
+    body{
+        margin: 0;
+        background-color:#c7e1fc;
+        font-family: Verdana, sans-serif;
+    }
+    h1{
+        text-align: center;
+        font-family: "Stack Sans Notch", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+    }
+    h2{
+        text-align: center;
+        font-family: "Stack Sans Notch", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+    }
+    p{
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+    }
+    a{
+        display: inline;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-weight: 370;
+    }
+    .hi{
+        display: inline;
+        font-family: Verdana, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+    }
+    .mainn{
+        display: block;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+    }
+    .yessydog{
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+    }
     .topnav {
         background-color: #fafcde;
         overflow: hidden;
@@ -18,8 +71,48 @@
         background-color: #e8f3ff;
         color: #fafcde;
     }
+    .people-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    .person-card {
+        background: #ffffff;
+        border-radius: 14px;
+        padding: 18px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+    .person-card h3 {
+        margin: 0 0 6px;
+        font-family: "Stack Sans Notch", sans-serif;
+        font-weight: 400;
+    }
+    .person-card p {
+        margin: 0;
+        font-size: 0.95rem;
+    }
 </style>
+<body>
 <nav class="topnav">
         <a href="/LIntWeb/index.html">Home</a>
         <a href="/LIntWeb/who.html">People</a>
 </nav>
+<h1>People</h1>
+
+<section class="people-grid">
+    <article class="person-card">
+        <h3>walfie308</h3>
+        <p>hardware / software developer</p>
+    </article>
+    <article class="person-card">
+        <h3>stoat</h3>
+        <p>hardware / software lead</p>
+    </article>
+    <article class="person-card">
+        <h3>lazerkat</h3>
+        <p>marketing manager</p>
+    </article>
+</section>
+</body>
