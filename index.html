@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LInt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<style>
+    <style>
     body{
-        background-color:rgb(255, 255, 166);
+        margin: 0;
+        background-color:#c7e1fc;
+        font-family: Verdana, sans-serif;
     }
     h1{
         text-align: center;
@@ -22,46 +27,76 @@
     }
     p{
         text-align: center;
-        font-family: "Stack Sans Notch", sans-serif;
+        font-family: Verdana, sans-serif;
         font-optical-sizing: auto;
         font-weight: 370;
     }
     a{
         display: inline;
         text-align: center;
-        font-family: "Stack Sans Notch", sans-serif;
+        font-family: Verdana, sans-serif;
         font-weight: 370;
     }
     .hi{
         display: inline;
-        font-family: "Stack Sans Notch", sans-serif;
+        font-family: Verdana, sans-serif;
         font-optical-sizing: auto;
         font-weight: 370;
     }
     .mainn{
         display: block;
         text-align: center;
-        font-family: "Stack Sans Notch", sans-serif;
+        font-family: Verdana, sans-serif;
         font-optical-sizing: auto;
         font-weight: 370;
     }
     .yessydog{
         text-align: center;
-        font-family: "Stack Sans Notch", sans-serif;
+        font-family: Verdana, sans-serif;
         font-optical-sizing: auto;
         font-weight: 370;
     }
-</style>
+    .topnav {
+        background-color: #fafcde;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    .topnav a {
+        color: #000000;
+        text-decoration: none;
+        font-family: Verdana, sans-serif;
+    }
+    .topnav a:hover {
+        background-color: #e8f3ff;
+        color: #fafcde;
+    }
+    </style>
+</head>
 <body>
-<h1>LInt</h1>
-<h2>(LoRa Intranet)</h2>
-<p>A LoRa (Long Range) based intranet</p>
-<h2>How it works:</h2>
-<div class="yessydog">
-    <a href="https://docs.google.com/presentation/d/1pE8jkffsTZGYyMbJ0qmfiYh5H-iKb0zsMEfUf6nuZR4/edit?usp=sharing">Slide</a>
-</div>
-<h2>Why?</h2>
-<p>To make a new type of internet that is less power consuming, no service costs, and generally more accessable</p>
-<h2>How can I access it?</h2>
-<p class="mainn">The main code is on gitlab at <a class="hi" href="https://gitlab.com/walfie308/lint">walfie308/lint</a>, although it will probably still be in development.</p>
+    <nav class="topnav">
+        <a href="#home">Home</a>
+        <a href="#works">How it works</a>
+        <a href="#why">Why</a>
+        <a href="#access">Access</a>
+    </nav>
+
+    <main id="home">
+        <h1>LInt</h1>
+        <h2>(LoRa Intranet)</h2>
+        <p>A LoRa (Long Range) based intranet</p>
+
+        <h2 id="works">How it works:</h2>
+        <div class="yessydog">
+            <a href="https://docs.google.com/presentation/d/1pE8jkffsTZGYyMbJ0qmfiYh5H-iKb0zsMEfUf6nuZR4/edit?usp=sharing">Slide</a>
+        </div>
+
+        <h2 id="why">Why?</h2>
+        <p>To make a new type of internet that is less power consuming, no service costs, and generally more accessable</p>
+
+        <h2 id="access">How can I access it?</h2>
+        <p class="mainn">The main code is on gitlab at <a class="hi" href="https://gitlab.com/walfie308/lint">walfie308/lint</a>, although it will probably still be in development.</p>
+    </main>
 </body>
+</html>
