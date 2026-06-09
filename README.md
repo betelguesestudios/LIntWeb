@@ -17,9 +17,12 @@ run the index.html
 - hopefully enough info
 - very early internet design!
   
-## People who helped
+## People who helped outside of this repo
 - walfie308
 - squirrel
 - lazerkat
 - cool-pancakes
-- and maybe more?
+## Contributors for this repo
+<a href="https://github.com/betelguesestudios/LIntWeb/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=betelguesestudios/LIntWeb&max=50" />
+</a>
