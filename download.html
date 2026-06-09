@@ -1,0 +1,112 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lInt - Download</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+        margin: 0;
+        background-color:#c7e1fc;
+        font-family: Verdana, sans-serif;
+        }
+        .topnav {
+        background-color: #fafcde;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        }
+        .topnav a {
+        color: #000000;
+        text-decoration: none;
+        font-family: Verdana, sans-serif;
+        }
+        .topnav a:hover {
+        background-color: #e8f3ff;
+        color: #fafcde;
+        }
+        h1{
+        text-align: center;
+        font-family: "Stack Sans Notch", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+        }
+        h2{
+        text-align: center;
+        font-family: "Stack Sans Notch", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+        }
+        h5{
+        text-align: center;
+        font-family: "Stack Sans Notch", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+        }
+        a{
+        display: inline;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-weight: 370;
+        }
+        .hi{
+        display: inline;
+        font-family: Verdana, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+        }
+        .mainn{
+        display: block;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+        }
+        .list-wrap{
+        display: flex;
+        justify-content: center;
+        }
+        ol{
+        margin: 0;
+        padding-left: 1.2em;
+        text-align: left;
+        font-family: Verdana, sans-serif;
+        font-weight: 370;
+        }
+        p{
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 370;
+        }
+    </style>
+</head>
+<body>
+    <nav class="topnav">
+        <a href="/LIntWeb/index.html">Home</a>
+        <a href="/LIntWeb/who.html">People</a>
+        <a href="/LIntWeb/download.html">Download</a>
+    </nav>
+    <h1>lInt</h1>
+    <h2>Downloads</h2>
+    <p class="mainn">Source Code .zip (to flash to board) <a href="https://gitlab.com/walfie308/lint/-/archive/main/lint-main.zip?ref_type=heads" class="hi">Download</a></p>
+    <h2>How to use</h2>
+    <p>lInt requires a Heltec 32 v3 OR a Heltec 32 v4 to run, to install the lInt to your Heltec:</p>
+    <div class="list-wrap">
+        <ol type="1">
+            <li>Install arduino IDE</li>
+            <li>Install the official Heltec boards library <a href="https://github.com/HelTecAutomation/Heltec_ESP32">from their github (eww github)</a></li>
+            <li>Open the <a href="https://gitlab.com/walfie308/lint/-/archive/main/lint-main.zip?ref_type=heads">zip</a></li>
+            <li>Extract it</li>
+            <li>locate lInt.ino</li>
+            <li>open it with arduino ide</li>
+            <li>Select your Board's USB port (once connected) and board type in the "Tools" tab</li>
+            <li>Set the correct Lo-Ra region in the Tools tab</li>
+            <li>Set the correct Lo-Ra freq (in hertz) at #define RF_FREQUENCY default is 915Mhz (fine for NZ)</li>
+            <li>press Ctrl + U to upload lInt to your board</li>
+        </ol>
+    </div>
+    <h5>This code is in the very early stages of development and is not far off the Heltec's Ping Pong demo, this notice will be updated with the current stage of development. ;)</h2>
+</body>
